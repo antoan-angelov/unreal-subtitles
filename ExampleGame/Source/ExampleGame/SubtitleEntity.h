@@ -14,18 +14,18 @@ class EXAMPLEGAME_API USubtitleEntity : public UObject
 	GENERATED_BODY()
 	
 public:
-	void SetSubId(int id);
+	void SetSubId(int SubId);
 	int GetSubId();
-	void SetRange(TRange<int32>* range);
+	void SetRange(TRange<int32>* MillisRange);
 	TRange<int32>* GetRange();
-	void SetText(FString text);
+	void SetText(FString SubText);
 	FString GetText();
 	FText GetViewableText();
 private:
-	int id;
-	TRange<int32>* range;
-	FString text;
-	FText viewableText;
+	int SubId;
+	TRange<int32>* MillisRange;
+	FString SubText;
+	FText SubViewableText;
 	
 	
 };

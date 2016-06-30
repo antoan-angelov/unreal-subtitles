@@ -3,39 +3,39 @@
 #include "ExampleGame.h"
 #include "SubtitleEntity.h"
 
-void USubtitleEntity::SetSubId(int id)
+void USubtitleEntity::SetSubId(int SubId)
 {
-	this->id = id;
+	this->SubId = SubId;
 }
 
 int USubtitleEntity::GetSubId()
 {
-	return id;
+	return SubId;
 }
 
-void USubtitleEntity::SetRange(TRange<int32>* range)
+void USubtitleEntity::SetRange(TRange<int32>* MillisRange)
 {
-	this->range = range;
+	this->MillisRange = MillisRange;
 }
 
 TRange<int32>* USubtitleEntity::GetRange()
 {
-	return range;
+	return MillisRange;
 }
 
-void USubtitleEntity::SetText(FString text) {
-	this->text = text;
-	this->viewableText = FText::FromString(text);
+void USubtitleEntity::SetText(FString SubText) {
+	this->SubText = SubText;
+	this->SubViewableText = FText::FromString(SubText);
 }
 
 FString USubtitleEntity::GetText()
 {
-	return text;
+	return SubText;
 }
 
 FText USubtitleEntity::GetViewableText()
 {
-	return viewableText;
+	return SubViewableText;
 }
 
 
